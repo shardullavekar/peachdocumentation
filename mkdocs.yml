@@ -1,0 +1,4 @@
+site_name: Peach Payments Docs
+pages:
+- 'Step 1: PHP': 'index.md'
+- 'Step 2: Android': 'android.md'
