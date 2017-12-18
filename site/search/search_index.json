@@ -1,0 +1,69 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Peach Payments PHP Integration For Mobile SDK\n\n\nAt Peach Payments, we are committed to offer a seamless integration experience to our developers.\n\n\nWe are happy to launch Devsupport AI - a bot programmer that integrates PayU with your code in few minutes.\n\n\nAt the end of this, you can test accepting payments on Peach Payments Sandbox Environment.\n\n\nWhat do I need?\n\n\n\n\nUser Id\n\n\nPassword\n\n\nEntity Id\n\n\n\n\nGet your Entity Id from \nPeach Payments Dashboard\n\n\nSteps to follow\n\n\n\n\n\n\nDownload the Devsupport AI\n. tool. Install the .exe if you are on Windows, mac.zip if you are on Mac and .deb if you are on Linux. You should see a screen below:\n  \n\n\n\n\n\n\nLink the home directory of your Android project.\n  \n\n\n\n\n\n\nClick on Integrate button.\n\n\n\n\n\n\nSearch for Peach Payments when asked for Product you'd like to integrate.\n\n\n\n\n\n\nClick on 'PHP for mobile SDK'.\n\n\n\n\n\n\nEnter your User Id, Password and Entity Id. If you enter wrong key combination, the tool will throw an error!.\n\n\n\n\n\n\nDownload the notify.php and host it on your server.\n\n\n\n\n\n\nEnter the publicly available URL for the notify.php you just downloaded and also enter your company name(without spaces).\nIt will be used for callback.\n\n\n\n\n\n\nDownload the action.php, host it and give its URL in next step.\n\n\n\n\n\n\nNote that both notify.php and action.php contain your Sandbox Credentials. DO NOT Modify them.\n\n\n\n\n\n\nIf everything went well, you should see a success screen like this:\n  \n\n\n\n\n\n\nProceed to Android Integration to complete the flow.\n\n\n\n\n\n\nSwitching to Production\n\n\nGet your production credentials from \nProduction Peach Payments dashboard\n.\n\n\nChange the following in action.php and notify.php:\n\n\n\n\n\n\nChange URL from \"https://test.oppwa.com/\" to \"https://oppwa.com/\".\n\n\n\n\n\n\nChange User Id to Production User Id.\n\n\n\n\n\n\nChange Password to Production Password.\n\n\n\n\n\n\nChange Entity Id to Production Entity Id.\n\n\n\n\n\n\nNeed help?\n\n\nYou can chat with us using the orange icon on the tool or write us an email at support@devsupport.ai - happy to help!", 
+            "title": "Step 1: PHP"
+        }, 
+        {
+            "location": "/#peach-payments-php-integration-for-mobile-sdk", 
+            "text": "At Peach Payments, we are committed to offer a seamless integration experience to our developers.  We are happy to launch Devsupport AI - a bot programmer that integrates PayU with your code in few minutes.  At the end of this, you can test accepting payments on Peach Payments Sandbox Environment.", 
+            "title": "Peach Payments PHP Integration For Mobile SDK"
+        }, 
+        {
+            "location": "/#what-do-i-need", 
+            "text": "User Id  Password  Entity Id   Get your Entity Id from  Peach Payments Dashboard", 
+            "title": "What do I need?"
+        }, 
+        {
+            "location": "/#steps-to-follow", 
+            "text": "Download the Devsupport AI . tool. Install the .exe if you are on Windows, mac.zip if you are on Mac and .deb if you are on Linux. You should see a screen below:\n      Link the home directory of your Android project.\n      Click on Integrate button.    Search for Peach Payments when asked for Product you'd like to integrate.    Click on 'PHP for mobile SDK'.    Enter your User Id, Password and Entity Id. If you enter wrong key combination, the tool will throw an error!.    Download the notify.php and host it on your server.    Enter the publicly available URL for the notify.php you just downloaded and also enter your company name(without spaces).\nIt will be used for callback.    Download the action.php, host it and give its URL in next step.    Note that both notify.php and action.php contain your Sandbox Credentials. DO NOT Modify them.    If everything went well, you should see a success screen like this:\n      Proceed to Android Integration to complete the flow.", 
+            "title": "Steps to follow"
+        }, 
+        {
+            "location": "/#switching-to-production", 
+            "text": "Get your production credentials from  Production Peach Payments dashboard .  Change the following in action.php and notify.php:    Change URL from \"https://test.oppwa.com/\" to \"https://oppwa.com/\".    Change User Id to Production User Id.    Change Password to Production Password.    Change Entity Id to Production Entity Id.", 
+            "title": "Switching to Production"
+        }, 
+        {
+            "location": "/#need-help", 
+            "text": "You can chat with us using the orange icon on the tool or write us an email at support@devsupport.ai - happy to help!", 
+            "title": "Need help?"
+        }, 
+        {
+            "location": "/android/", 
+            "text": "Peach Payments Android Integration\n\n\nWhat do I need?\n\n\n\n\nURL pointing to action.php\n\n\n\n\nSteps to follow\n\n\n\n\n\n\nDownload the Devsupport AI\n. tool. Install the .exe if you are on Windows, mac.zip if you are on Mac and .deb if you are on Linux. You should see a screen below:\n  \n\n\n\n\n\n\nLink the home directory of your Android project.\n  \n\n\n\n\n\n\nClick on Integrate button.\n\n\n\n\n\n\nSearch for Peach Payments when asked for Product you'd like to integrate.\n\n\n\n\n\n\nClick on 'Peach Payments Android Integration'.\n\n\n\n\n\n\nEnter URL pointing to action.php and also your company name(without spaces) same as you entered in PHP integration.\n\n\n\n\n\n\nDevsupport AI will show list of injections it will do in the selected files.\n\n\n\n\n\n\nAfter selecting suitable files click on Apply changes.\n\n\n\n\n\n\nIf everything went well, you should see a success screen like this:\n  \n\n\n\n\n\n\nCalling Payments\n\n\nIn the activity you selected and just call InstamojoPay as shown below:\n\n\ncallPeachPayments(amount, currency, payment_type, env);\n\n\nfor e.g.\n\n\n\n\n\n\ncallPeachPayments(\"95.00\", \"EUR\", \"DB\", Config.TEST);\n for Debit payment on test.\n\n\n\n\n\n\ncallPeachPayments(\"95.00\", \"EUR\", \"PA\", Config.PROD);\n for Preauthorization payment on production.\n\n\n\n\n\n\nYou will receive a call back on the below function:\n\n\nprivate void initListener() {\n            peachListener = new PeachListener() {\n                @Override\n                public void onSuccess(String response) {\n                    Toast.makeText(getApplicationContext(), \nSuccess:\n + response, Toast.LENGTH_LONG)\n                            .show();\n                }\n\n                @Override\n                public void onFailure(int code, String reason) {\n                    Toast.makeText(getApplicationContext(), \nFailed Reason:\n + reason, Toast.LENGTH_LONG)\n                            .show();\n                }\n            };\n        }\n\n\n\n\nResponse Format\n\n\nstatus=success:idontKNOW:(\n\n\nNeed help?\n\n\nYou can chat with us using the orange icon on the tool or write us an email at support@devsupport.ai - happy to help!", 
+            "title": "Step 2: Android"
+        }, 
+        {
+            "location": "/android/#peach-payments-android-integration", 
+            "text": "", 
+            "title": "Peach Payments Android Integration"
+        }, 
+        {
+            "location": "/android/#what-do-i-need", 
+            "text": "URL pointing to action.php", 
+            "title": "What do I need?"
+        }, 
+        {
+            "location": "/android/#steps-to-follow", 
+            "text": "Download the Devsupport AI . tool. Install the .exe if you are on Windows, mac.zip if you are on Mac and .deb if you are on Linux. You should see a screen below:\n      Link the home directory of your Android project.\n      Click on Integrate button.    Search for Peach Payments when asked for Product you'd like to integrate.    Click on 'Peach Payments Android Integration'.    Enter URL pointing to action.php and also your company name(without spaces) same as you entered in PHP integration.    Devsupport AI will show list of injections it will do in the selected files.    After selecting suitable files click on Apply changes.    If everything went well, you should see a success screen like this:", 
+            "title": "Steps to follow"
+        }, 
+        {
+            "location": "/android/#calling-payments", 
+            "text": "In the activity you selected and just call InstamojoPay as shown below:  callPeachPayments(amount, currency, payment_type, env);  for e.g.    callPeachPayments(\"95.00\", \"EUR\", \"DB\", Config.TEST);  for Debit payment on test.    callPeachPayments(\"95.00\", \"EUR\", \"PA\", Config.PROD);  for Preauthorization payment on production.    You will receive a call back on the below function:  private void initListener() {\n            peachListener = new PeachListener() {\n                @Override\n                public void onSuccess(String response) {\n                    Toast.makeText(getApplicationContext(),  Success:  + response, Toast.LENGTH_LONG)\n                            .show();\n                }\n\n                @Override\n                public void onFailure(int code, String reason) {\n                    Toast.makeText(getApplicationContext(),  Failed Reason:  + reason, Toast.LENGTH_LONG)\n                            .show();\n                }\n            };\n        }", 
+            "title": "Calling Payments"
+        }, 
+        {
+            "location": "/android/#response-format", 
+            "text": "status=success:idontKNOW:(", 
+            "title": "Response Format"
+        }, 
+        {
+            "location": "/android/#need-help", 
+            "text": "You can chat with us using the orange icon on the tool or write us an email at support@devsupport.ai - happy to help!", 
+            "title": "Need help?"
+        }
+    ]
+}
