@@ -1,9 +1,10 @@
 site_name: Android Integration
 theme:
   name: 'material'
+  logo: 'img/peach.png'
   palette:
-    primary: 'Orange'
+    primary: 'Blue'
     accent: 'Deep Orange'
-  logo: 'images/peach.svg'
 markdown_extensions:
   - admonition
+  - codehilite
