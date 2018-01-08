@@ -77,6 +77,8 @@ for e.g.
 
 * `callPeachPayments("95.00", "EUR", "PA", Config.PROD);` for Preauthorization payment on production.
 
+## Handling Response
+
 You will receive a call back on the below function:
 
 ````
@@ -97,10 +99,97 @@ private void initListener() {
         }
 ````
 
-### Response Format
+### Success Response Format
+````json
+{
+"id":"8a8294496059beaf01606d7130426f90",
+"paymentType":"DB",
+"paymentBrand":"VISA",
+"amount":"95.00",
+"currency":"EUR",
+"descriptor":"ABC*",
+"result":{
+"code":"000.100.110",
+"description":"Request successfully processed in 'Merchant in Integrator Test Mode'"
+},
+"resultDetails":{
+"clearingInstituteName":"Elavon-euroconex_UK_Test"
+},
+"card":{
+"bin":"424242",
+"last4Digits":"4242",
+"holder":"tester test",
+"expiryMonth":"01",
+"expiryYear":"2021"
+},
+"customer":{
+"ip":"183.82.20.38"
+},
+"threeDSecure":{
+"eci":"06"
+},
+"customParameters":{
+"SHOPPER_device":"Genymotion Android Google Nexus 5X - 7.0.0 - API 24 - 1080x1920",
+"SHOPPER_MSDKIntegrationType":"Checkout UI",
+"CTPE_DESCRIPTOR_TEMPLATE":"ABC* ${USAGE}",
+"SHOPPER_OS":"Android 7.0",
+"SHOPPER_MSDKVersion":"2.2.0",
+"SHOPPER_deviceId":"000000000000000"
+},
+"risk":{
+"score":"0"
+},
+"buildNumber":"a19bfe31a0a82856de8df0ce254123b5dfdc5fbe@2017-12-15 12:56:54 +0000",
+"timestamp":"2017-12-19 06:23:42+0000",
+"ndc":"4AD2A6AB8255CE012DA914A441A19693.sbg-vm-tx02"
+}
+````
 
-status=success:idontKNOW:(
-
+### Failure Response Format
+````json
+{
+"id":"8a82944a6059df3701606d757f491168",
+"paymentType":"DB",
+"paymentBrand":"VISA",
+"result":{
+"code":"100.380.401",
+"description":"User Authentication Failed"
+},
+"resultDetails":{
+"clearingInstituteName":"Elavon-euroconex_UK_Test"
+},
+"card":{
+"bin":"411111",
+"last4Digits":"1111",
+"holder":"tester test",
+"expiryMonth":"01",
+"expiryYear":"2021"
+},
+"customer":{
+"ip":"183.82.20.38"
+},
+"threeDSecure":{
+"eci":"07",
+"verificationId":"",
+"xid":"CAACCVVUlwCXUyhQNlSXAAAAAAA=",
+"paRes":"pares"
+},
+"customParameters":{
+"SHOPPER_device":"Genymotion Android Google Nexus 5X - 7.0.0 - API 24 - 1080x1920",
+"SHOPPER_MSDKIntegrationType":"Checkout UI",
+"CTPE_DESCRIPTOR_TEMPLATE":"ABC* ${USAGE}",
+"SHOPPER_OS":"Android 7.0",
+"SHOPPER_MSDKVersion":"2.2.0",
+"SHOPPER_deviceId":"000000000000000"
+},
+"risk":{
+"score":"100"
+},
+"buildNumber":"a19bfe31a0a82856de8df0ce254123b5dfdc5fbe@2017-12-15 12:56:54 +0000",
+"timestamp":"2017-12-19 06:28:38+0000",
+"ndc":"2E8F0A9725C6F8AF6A04E6C419C31C6F.sbg-vm-tx02"
+}
+````
 
 ## Switching to Production
 

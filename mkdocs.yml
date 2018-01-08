@@ -8,3 +8,6 @@ theme:
 markdown_extensions:
   - admonition
   - codehilite
+google_analytics:
+  - 'UA-103793943-5'
+  - 'auto'

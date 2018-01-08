@@ -32,11 +32,13 @@
     
     
       
-        <title>Step 2: Android - peach payments Android Integration</title>
+        <title>Using Go/Node JS/Java - Android Integration</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/application-709eec9410.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -53,7 +55,11 @@
     
   </head>
   
-    <body>
+    
+    
+    
+      <body data-md-color-primary="blue" data-md-color-accent="deep-orange">
+    
   
     <svg class="md-svg">
       <defs>
@@ -69,9 +75,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="peach payments Android Integration" class="md-header-nav__button md-logo">
+        <a href=".." title="Android Integration" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <img src="../img/peach.png" width="24" height="24">
           
         </a>
       </div>
@@ -84,7 +90,7 @@
             
               
             
-            Step 2: Android
+            Using Go/Node JS/Java
           
         </span>
       </div>
@@ -134,10 +140,10 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <span class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <img src="../img/peach.png" width="24" height="24">
       
     </span>
-    peach payments Android Integration
+    Android Integration
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -148,8 +154,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Step 1: PHP" class="md-nav__link">
-      Step 1: PHP
+    <a href=".." title="Getting Started" class="md-nav__link">
+      Getting Started
     </a>
   </li>
 
@@ -168,70 +174,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Step 2: Android
-      </label>
-    
-    <a href="./" title="Step 2: Android" class="md-nav__link md-nav__link--active">
-      Step 2: Android
+    <a href="./" title="Using Go/Node JS/Java" class="md-nav__link md-nav__link--active">
+      Using Go/Node JS/Java
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-do-i-need" title="What do I need?" class="md-nav__link">
-    What do I need?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#steps-to-follow" title="Steps to follow" class="md-nav__link">
-    Steps to follow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#calling-payments" title="Calling Payments" class="md-nav__link">
-    Calling Payments
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#response-format" title="Response Format" class="md-nav__link">
-    Response Format
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#need-help" title="Need help?" class="md-nav__link">
-    Need help?
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -253,54 +198,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-do-i-need" title="What do I need?" class="md-nav__link">
-    What do I need?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#steps-to-follow" title="Steps to follow" class="md-nav__link">
-    Steps to follow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#calling-payments" title="Calling Payments" class="md-nav__link">
-    Calling Payments
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#response-format" title="Response Format" class="md-nav__link">
-    Response Format
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#need-help" title="Need help?" class="md-nav__link">
-    Need help?
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -312,78 +209,100 @@
               
                 
                 
-                <h1 id="peach-payments-android-integration">Peach Payments Android Integration</h1>
-<h2 id="what-do-i-need">What do I need?</h2>
-<ul>
-<li>URL pointing to action.php</li>
-</ul>
-<h2 id="steps-to-follow">Steps to follow</h2>
+                <h1 id="using-gonode-jsjava">Using Go/Node JS/Java</h1>
+<p>The back end script does 3 main jobs.</p>
 <ul>
 <li>
-<p><a href="https://github.com/artpar/devsupport/releases/latest">Download the Devsupport AI</a>. tool. Install the .exe if you are on Windows, mac.zip if you are on Mac and .deb if you are on Linux. You should see a screen below:
-  <img alt="Enter Email" src="../img/emailInputs.png" /></p>
+<p>Creates Checkout</p>
 </li>
 <li>
-<p>Link the home directory of your Android project.
-  <img alt="Home Screen" src="../img/homescreen.png" /></p>
+<p>Checks Payment Status with Peachpayments</p>
 </li>
 <li>
-<p>Click on Integrate button.</p>
-</li>
-<li>
-<p>Search for Peach Payments when asked for Product you'd like to integrate.</p>
-</li>
-<li>
-<p>Click on 'Peach Payments Android Integration'.</p>
-</li>
-<li>
-<p>Enter URL pointing to action.php and also your company name(without spaces) same as you entered in PHP integration.</p>
-</li>
-<li>
-<p>Devsupport AI will show list of injections it will do in the selected files.</p>
-</li>
-<li>
-<p>After selecting suitable files click on Apply changes.</p>
-</li>
-<li>
-<p>If everything went well, you should see a success screen like this:
-  <img alt="Result" src="../img/androidresult.png" /></p>
+<p>Capture Payment after authorised.</p>
 </li>
 </ul>
-<h2 id="calling-payments">Calling Payments</h2>
-<p>In the activity you selected and just call InstamojoPay as shown below:</p>
-<p><code>callPeachPayments(amount, currency, payment_type, env);</code></p>
-<p>for e.g.</p>
-<ul>
-<li>
-<p><code>callPeachPayments("95.00", "EUR", "DB", Config.TEST);</code> for Debit payment on test.</p>
-</li>
-<li>
-<p><code>callPeachPayments("95.00", "EUR", "PA", Config.PROD);</code> for Preauthorization payment on production.</p>
-</li>
-</ul>
-<p>You will receive a call back on the below function:</p>
-<pre><code>private void initListener() {
-            peachListener = new PeachListener() {
-                @Override
-                public void onSuccess(String response) {
-                    Toast.makeText(getApplicationContext(), &quot;Success:&quot; + response, Toast.LENGTH_LONG)
-                            .show();
-                }
+<h1 id="checkout">Checkout</h1>
+<p>Here's how checkout is created:</p>
+<div class="codehilite"><pre><span></span>curl https://test.oppwa.com/v1/checkouts \
+    -d &quot;authentication.userId=8a8294174b7ecb28014b9699220015cc&quot; \
+    -d &quot;authentication.password=sy6KJsT8&quot; \
+    -d &quot;authentication.entityId=8a8294174b7ecb28014b9699220015ca&quot; \
+    -d &quot;amount=92.00&quot; \
+    -d &quot;currency=EUR&quot; \
+    -d &quot;paymentType=DB&quot; \
+    -d &quot;shopperResultUrl=my.app://custom/url&quot; \
+    -d &quot;notificationUrl=http://www.example.com/notify&quot;
+</pre></div>
 
-                @Override
-                public void onFailure(int code, String reason) {
-                    Toast.makeText(getApplicationContext(), &quot;Failed Reason:&quot; + reason, Toast.LENGTH_LONG)
-                            .show();
-                }
-            };
-        }
-</code></pre>
 
-<h3 id="response-format">Response Format</h3>
-<p>status=success:idontKNOW:(</p>
-<h2 id="need-help">Need help?</h2>
-<p>You can chat with us using the orange icon on the tool or write us an email at support@devsupport.ai - happy to help!</p>
+<div class="admonition info">
+<p class="admonition-title">Payment Type, ShopperResult and Notification URL</p>
+<p>Payment Type could be DB or PA for direct debit or pre-authorization.</p>
+<p>ShopperResult URL should be set to your company name + ://callback. e.g. mycompanyname://callback - ensure that you give the same name to the tool when asked about company name.</p>
+<p>Notification URL is where we post the payment result. It's a server to server call.</p>
+</div>
+<h1 id="payment-status">Payment Status</h1>
+<p>Here's how you can check the payment status:</p>
+<div class="codehilite"><pre><span></span>curl -G https://test.oppwa.com/v1/checkouts/{id}/payment \
+    -d &quot;authentication.userId=8a8294174b7ecb28014b9699220015cc&quot; \
+    -d &quot;authentication.password=sy6KJsT8&quot; \
+    -d &quot;authentication.entityId=8a8294174b7ecb28014b9699220015ca&quot;
+</pre></div>
+
+
+<div class="admonition info">
+<p class="admonition-title">Payment Id</p>
+<p>You will get a payment Id once the payment is completed. </p>
+<p>Pass this id as shown above and check the payment status. </p>
+</div>
+<h1 id="capture-payment">Capture Payment</h1>
+<p>After the Payment is authorized (when you initiate payment type as PA from your Android code) you need to capture it from your server.</p>
+<p>Here's how you can capture the payment:</p>
+<div class="codehilite"><pre><span></span>curl https://test.oppwa.com/v1/payments/{id} \
+    -d &quot;authentication.userId=8a8294174e735d0c014e78cf266b1794&quot; \
+    -d &quot;authentication.entityId=8a8294174e735d0c014e78cf26461790&quot; \
+    -d &quot;authentication.password=qyyfHCN83e&quot; \
+    -d &quot;amount=92.00&quot; \
+    -d &quot;currency=EUR&quot; \
+    -d &quot;paymentType=CP&quot;
+</pre></div>
+
+
+<div class="admonition info">
+<p class="admonition-title">Id</p>
+<p>First, check the payment status and get the Id from the status call. </p>
+<p>Call capture payment as shown above with the Id you get from the status call. </p>
+</div>
+<h1 id="arranging-checkout-payment-status-and-capture">Arranging Checkout, Payment Status and Capture</h1>
+<ul>
+<li>Combine these 3 calls in one server script.</li>
+<li>This server script should accept a POST parameter called action. action could be checkout, getPaymentStatus or capture.</li>
+<li>For checkout, the script should accpet POST parameters amount, currency and paymentType and pass it on to checkout call.</li>
+<li>For payment Status, the script should accept resourcePath and pass it on to status call.</li>
+<li>For capturing payment, call the payment status first, get the payment id and pass it on the status check call.</li>
+</ul>
+<p>Once your server script is ready, host it on your server, keep it's URL ready and proceed with the Android integration using the devsupport AI tool.</p>
+<p>Change the following in your server script:</p>
+<ul>
+<li>
+<p>Change URL from "https://test.oppwa.com/" to "https://oppwa.com/".</p>
+</li>
+<li>
+<p>Change User Id to Production User Id.</p>
+</li>
+<li>
+<p>Change Password to Production Password.</p>
+</li>
+<li>
+<p>Change Entity Id to Production Entity Id.</p>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Congrats! You just completed server integration. </p>
+<p>If you need help, write us an email at support@devsupport.ai - happy to help!</p>
+</div>
                 
                   
                 
@@ -402,7 +321,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Step 1: PHP" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -411,7 +330,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Step 1: PHP
+                Getting Started
               </span>
             </div>
           </a>
@@ -445,6 +364,8 @@
       
     
     
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-103793943-5","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
       
     
   </body>

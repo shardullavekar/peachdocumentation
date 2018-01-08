@@ -32,11 +32,13 @@
     
     
       
-        <title>peach payments Android Integration</title>
+        <title>Android Integration</title>
       
     
     
       <link rel="stylesheet" href="./assets/stylesheets/application-709eec9410.css">
+      
+        <link rel="stylesheet" href="./assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -53,7 +55,11 @@
     
   </head>
   
-    <body>
+    
+    
+    
+      <body data-md-color-primary="blue" data-md-color-accent="deep-orange">
+    
   
     <svg class="md-svg">
       <defs>
@@ -69,9 +75,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="peach payments Android Integration" class="md-header-nav__button md-logo">
+        <a href="." title="Android Integration" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <img src="./img/peachlogo.png">
           
         </a>
       </div>
@@ -84,7 +90,7 @@
             
               
             
-            Step 1: PHP
+            Getting Started
           
         </span>
       </div>
@@ -134,10 +140,10 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <span class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <img src="./img/peach.png" width="24" height="24">
       
     </span>
-    peach payments Android Integration
+    Android Integration
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -157,11 +163,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Step 1: PHP
+        Getting Started
       </label>
     
-    <a href="." title="Step 1: PHP" class="md-nav__link md-nav__link--active">
-      Step 1: PHP
+    <a href="." title="Getting Started" class="md-nav__link md-nav__link--active">
+      Getting Started
     </a>
     
       
@@ -182,22 +188,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#steps-to-follow" title="Steps to follow" class="md-nav__link">
-    Steps to follow
+  <a href="#steps" title="Steps" class="md-nav__link">
+    Steps
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initiating-payments" title="Initiating Payments" class="md-nav__link">
+    Initiating Payments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-response" title="Handling Response" class="md-nav__link">
+    Handling Response
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#success-response-format" title="Success Response Format" class="md-nav__link">
+    Success Response Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failure-response-format" title="Failure Response Format" class="md-nav__link">
+    Failure Response Format
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#switching-to-production" title="Switching to Production" class="md-nav__link">
     Switching to Production
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#need-help" title="Need help?" class="md-nav__link">
-    Need help?
   </a>
   
 </li>
@@ -217,8 +250,8 @@
 
 
   <li class="md-nav__item">
-    <a href="android/" title="Step 2: Android" class="md-nav__link">
-      Step 2: Android
+    <a href="Other Backend Techs/" title="Other Backend Techs" class="md-nav__link">
+      Other Backend Techs
     </a>
   </li>
 
@@ -251,22 +284,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#steps-to-follow" title="Steps to follow" class="md-nav__link">
-    Steps to follow
+  <a href="#steps" title="Steps" class="md-nav__link">
+    Steps
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initiating-payments" title="Initiating Payments" class="md-nav__link">
+    Initiating Payments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-response" title="Handling Response" class="md-nav__link">
+    Handling Response
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#success-response-format" title="Success Response Format" class="md-nav__link">
+    Success Response Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failure-response-format" title="Failure Response Format" class="md-nav__link">
+    Failure Response Format
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#switching-to-production" title="Switching to Production" class="md-nav__link">
     Switching to Production
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#need-help" title="Need help?" class="md-nav__link">
-    Need help?
   </a>
   
 </li>
@@ -286,18 +346,27 @@
               
                 
                 
-                <h1 id="peach-payments-php-integration-for-mobile-sdk">Peach Payments PHP Integration For Mobile SDK</h1>
+                <h1 id="getting-started">Getting Started</h1>
 <p>At Peach Payments, we are committed to offer a seamless integration experience to our developers.</p>
-<p>We are happy to launch Devsupport AI - a bot programmer that integrates PayU with your code in few minutes.</p>
-<p>At the end of this, you can test accepting payments on Peach Payments Sandbox Environment.</p>
+<p>We are happy to launch Devsupport AI - a bot programmer that integrates our Android SDK with your code in few minutes.</p>
+<div class="admonition info">
+<p class="admonition-title">Sandbox Integration</p>
+<p>At the end of this integration, you can test payments on our Sandbox Environment. Note that Sandbox and Production credentails are different.</p>
+</div>
 <h2 id="what-do-i-need">What do I need?</h2>
 <ul>
 <li>User Id</li>
 <li>Password</li>
 <li>Entity Id</li>
+<li>A Backend Server </li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Server Script</p>
+<p>We currently support PHP on the back end server. If you use any other back end technology, check <a href="https://peachpayments.devsupport.ai/othertechs/">other back end techs.</a></p>
+</div>
 <p>Get your Entity Id from <a href="./test.ppay.io" title="Peach Payments Dashboard">Peach Payments Dashboard</a></p>
-<h2 id="steps-to-follow">Steps to follow</h2>
+<h2 id="steps">Steps</h2>
+<p><em>You will first complete your back end integration, host the files Devsupport AI tool gives you and keep their publicly available URLs ready.</em></p>
 <ul>
 <li>
 <p><a href="https://github.com/artpar/devsupport/releases/latest">Download the Devsupport AI</a>. tool. Install the .exe if you are on Windows, mac.zip if you are on Mac and .deb if you are on Linux. You should see a screen below:
@@ -311,16 +380,16 @@
 <p>Click on Integrate button.</p>
 </li>
 <li>
-<p>Search for Peach Payments when asked for Product you'd like to integrate.</p>
+<p>Search for Peachpayments when asked for Product you'd like to integrate.</p>
 </li>
 <li>
-<p>Click on 'PHP for mobile SDK'.</p>
+<p>If you are using PHP, select 'PHP for mobile SDK'. If you are using some other back end technology, check <a href="https://peachpayments.devsupport.ai othertechs/">other back end techs.</a></p>
 </li>
 <li>
-<p>Enter your User Id, Password and Entity Id. If you enter wrong key combination, the tool will throw an error!.</p>
+<p>Enter your User Id, Password and Entity Id. If you enter wrong key combination, the tool will throw an error!</p>
 </li>
 <li>
-<p>Download the notify.php and host it on your server.</p>
+<p>Download the notify.php and host it on your server. Keep it's URL ready.</p>
 </li>
 <li>
 <p>Enter the publicly available URL for the notify.php you just downloaded and also enter your company name(without spaces).
@@ -339,7 +408,144 @@ It will be used for callback.</p>
 <li>
 <p>Proceed to Android Integration to complete the flow.</p>
 </li>
+<li>
+<p>Enter the URL to the action.php you just downloaded. </p>
+</li>
+<li>
+<p>Devsupport AI will show you a list of injections the bot will do.</p>
+</li>
+<li>
+<p>Apply changes and if everything went well, you should see a screen like this:</p>
+</li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Keep your credentials safe</p>
+<p>Devsupport AI tool doesn't store your credentials. You are responsible for your credentials. Keep them safe!</p>
+</div>
+<h2 id="initiating-payments">Initiating Payments</h2>
+<p>In the activity you selected and just call callPeachPayments as shown below:</p>
+<p><code>callPeachPayments(amount, currency, payment_type, env);</code></p>
+<p>for e.g.</p>
+<ul>
+<li>
+<p><code>callPeachPayments("95.00", "EUR", "DB", Config.TEST);</code> for Debit payment on test.</p>
+</li>
+<li>
+<p><code>callPeachPayments("95.00", "EUR", "PA", Config.PROD);</code> for Preauthorization payment on production.</p>
+</li>
+</ul>
+<h2 id="handling-response">Handling Response</h2>
+<p>You will receive a call back on the below function:</p>
+<div class="codehilite"><pre><span></span>private void initListener() {
+            peachListener = new PeachListener() {
+                @Override
+                public void onSuccess(String response) {
+                    Toast.makeText(getApplicationContext(), &quot;Success:&quot; + response, Toast.LENGTH_LONG)
+                            .show();
+                }
+
+                @Override
+                public void onFailure(int code, String reason) {
+                    Toast.makeText(getApplicationContext(), &quot;Failed Reason:&quot; + reason, Toast.LENGTH_LONG)
+                            .show();
+                }
+            };
+        }
+</pre></div>
+
+
+<h3 id="success-response-format">Success Response Format</h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;8a8294496059beaf01606d7130426f90&quot;</span><span class="p">,</span>
+<span class="nt">&quot;paymentType&quot;</span><span class="p">:</span><span class="s2">&quot;DB&quot;</span><span class="p">,</span>
+<span class="nt">&quot;paymentBrand&quot;</span><span class="p">:</span><span class="s2">&quot;VISA&quot;</span><span class="p">,</span>
+<span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="s2">&quot;95.00&quot;</span><span class="p">,</span>
+<span class="nt">&quot;currency&quot;</span><span class="p">:</span><span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+<span class="nt">&quot;descriptor&quot;</span><span class="p">:</span><span class="s2">&quot;ABC*&quot;</span><span class="p">,</span>
+<span class="nt">&quot;result&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="s2">&quot;000.100.110&quot;</span><span class="p">,</span>
+<span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;Request successfully processed in &#39;Merchant in Integrator Test Mode&#39;&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;resultDetails&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;clearingInstituteName&quot;</span><span class="p">:</span><span class="s2">&quot;Elavon-euroconex_UK_Test&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;card&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;bin&quot;</span><span class="p">:</span><span class="s2">&quot;424242&quot;</span><span class="p">,</span>
+<span class="nt">&quot;last4Digits&quot;</span><span class="p">:</span><span class="s2">&quot;4242&quot;</span><span class="p">,</span>
+<span class="nt">&quot;holder&quot;</span><span class="p">:</span><span class="s2">&quot;tester test&quot;</span><span class="p">,</span>
+<span class="nt">&quot;expiryMonth&quot;</span><span class="p">:</span><span class="s2">&quot;01&quot;</span><span class="p">,</span>
+<span class="nt">&quot;expiryYear&quot;</span><span class="p">:</span><span class="s2">&quot;2021&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;customer&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;ip&quot;</span><span class="p">:</span><span class="s2">&quot;183.82.20.38&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;threeDSecure&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;eci&quot;</span><span class="p">:</span><span class="s2">&quot;06&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;customParameters&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;SHOPPER_device&quot;</span><span class="p">:</span><span class="s2">&quot;Genymotion Android Google Nexus 5X - 7.0.0 - API 24 - 1080x1920&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_MSDKIntegrationType&quot;</span><span class="p">:</span><span class="s2">&quot;Checkout UI&quot;</span><span class="p">,</span>
+<span class="nt">&quot;CTPE_DESCRIPTOR_TEMPLATE&quot;</span><span class="p">:</span><span class="s2">&quot;ABC* ${USAGE}&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_OS&quot;</span><span class="p">:</span><span class="s2">&quot;Android 7.0&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_MSDKVersion&quot;</span><span class="p">:</span><span class="s2">&quot;2.2.0&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_deviceId&quot;</span><span class="p">:</span><span class="s2">&quot;000000000000000&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;risk&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;buildNumber&quot;</span><span class="p">:</span><span class="s2">&quot;a19bfe31a0a82856de8df0ce254123b5dfdc5fbe@2017-12-15 12:56:54 +0000&quot;</span><span class="p">,</span>
+<span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2017-12-19 06:23:42+0000&quot;</span><span class="p">,</span>
+<span class="nt">&quot;ndc&quot;</span><span class="p">:</span><span class="s2">&quot;4AD2A6AB8255CE012DA914A441A19693.sbg-vm-tx02&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="failure-response-format">Failure Response Format</h3>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;8a82944a6059df3701606d757f491168&quot;</span><span class="p">,</span>
+<span class="nt">&quot;paymentType&quot;</span><span class="p">:</span><span class="s2">&quot;DB&quot;</span><span class="p">,</span>
+<span class="nt">&quot;paymentBrand&quot;</span><span class="p">:</span><span class="s2">&quot;VISA&quot;</span><span class="p">,</span>
+<span class="nt">&quot;result&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="s2">&quot;100.380.401&quot;</span><span class="p">,</span>
+<span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;User Authentication Failed&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;resultDetails&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;clearingInstituteName&quot;</span><span class="p">:</span><span class="s2">&quot;Elavon-euroconex_UK_Test&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;card&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;bin&quot;</span><span class="p">:</span><span class="s2">&quot;411111&quot;</span><span class="p">,</span>
+<span class="nt">&quot;last4Digits&quot;</span><span class="p">:</span><span class="s2">&quot;1111&quot;</span><span class="p">,</span>
+<span class="nt">&quot;holder&quot;</span><span class="p">:</span><span class="s2">&quot;tester test&quot;</span><span class="p">,</span>
+<span class="nt">&quot;expiryMonth&quot;</span><span class="p">:</span><span class="s2">&quot;01&quot;</span><span class="p">,</span>
+<span class="nt">&quot;expiryYear&quot;</span><span class="p">:</span><span class="s2">&quot;2021&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;customer&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;ip&quot;</span><span class="p">:</span><span class="s2">&quot;183.82.20.38&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;threeDSecure&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;eci&quot;</span><span class="p">:</span><span class="s2">&quot;07&quot;</span><span class="p">,</span>
+<span class="nt">&quot;verificationId&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="nt">&quot;xid&quot;</span><span class="p">:</span><span class="s2">&quot;CAACCVVUlwCXUyhQNlSXAAAAAAA=&quot;</span><span class="p">,</span>
+<span class="nt">&quot;paRes&quot;</span><span class="p">:</span><span class="s2">&quot;pares&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;customParameters&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;SHOPPER_device&quot;</span><span class="p">:</span><span class="s2">&quot;Genymotion Android Google Nexus 5X - 7.0.0 - API 24 - 1080x1920&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_MSDKIntegrationType&quot;</span><span class="p">:</span><span class="s2">&quot;Checkout UI&quot;</span><span class="p">,</span>
+<span class="nt">&quot;CTPE_DESCRIPTOR_TEMPLATE&quot;</span><span class="p">:</span><span class="s2">&quot;ABC* ${USAGE}&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_OS&quot;</span><span class="p">:</span><span class="s2">&quot;Android 7.0&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_MSDKVersion&quot;</span><span class="p">:</span><span class="s2">&quot;2.2.0&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SHOPPER_deviceId&quot;</span><span class="p">:</span><span class="s2">&quot;000000000000000&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;risk&quot;</span><span class="p">:{</span>
+<span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="s2">&quot;100&quot;</span>
+<span class="p">},</span>
+<span class="nt">&quot;buildNumber&quot;</span><span class="p">:</span><span class="s2">&quot;a19bfe31a0a82856de8df0ce254123b5dfdc5fbe@2017-12-15 12:56:54 +0000&quot;</span><span class="p">,</span>
+<span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;2017-12-19 06:28:38+0000&quot;</span><span class="p">,</span>
+<span class="nt">&quot;ndc&quot;</span><span class="p">:</span><span class="s2">&quot;2E8F0A9725C6F8AF6A04E6C419C31C6F.sbg-vm-tx02&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <h2 id="switching-to-production">Switching to Production</h2>
 <p>Get your production credentials from <a href="https://www.ppay.io/merchant/#/index">Production Peach Payments dashboard</a>.</p>
 <p>Change the following in action.php and notify.php:</p>
@@ -357,8 +563,10 @@ It will be used for callback.</p>
 <p>Change Entity Id to Production Entity Id.</p>
 </li>
 </ul>
-<h2 id="need-help">Need help?</h2>
-<p>You can chat with us using the orange icon on the tool or write us an email at support@devsupport.ai - happy to help!</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Congrats! You just completed integrating our SDK. If you need help, you can chat with us using the orange icon on the tool or write us an email at support@devsupport.ai - happy to help!</p>
+</div>
                 
                   
                 
@@ -378,13 +586,13 @@ It will be used for callback.</p>
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="android/" title="Step 2: Android" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="Other Backend Techs/" title="Other Backend Techs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Step 2: Android
+                Other Backend Techs
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -420,6 +628,8 @@ It will be used for callback.</p>
       
     
     
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-103793943-5","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
       
     
   </body>
