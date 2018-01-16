@@ -1,6 +1,6 @@
-# Getting Started
+# Getting Started with Devsupport AI
 
-At Peach Payments, we are committed to offer a seamless integration experience to our developers.
+At Peach Payments, we are committed to offer a seamless integration experience to help you build great products easily.
 
 We are happy to launch Devsupport AI - a bot programmer that integrates our Android SDK with your code in few minutes.
 
@@ -27,9 +27,11 @@ Get your Entity Id from [Peach Payments Dashboard](test.ppay.io "Peach Payments 
 *You will first complete your back end integration, host the files Devsupport AI tool gives you and keep their publicly available URLs ready.*
 
 * [Download the Devsupport AI](https://github.com/artpar/devsupport/releases/latest). tool. Install the .exe if you are on Windows, mac.zip if you are on Mac and .deb if you are on Linux. You should see a screen below:
+
   ![Enter Email](img/emailInputs.png)
  
 * Link the home directory of your Android project.
+
   ![Home Screen](img/homescreen.png)
 
 * Click on Integrate button.
@@ -50,6 +52,7 @@ It will be used for callback.
 **Note that both notify.php and action.php contain your Sandbox Credentials. DO NOT Modify them.**
 
 * If everything went well, you should see a success screen like this:
+
   ![Result](img/PhpResult.png)
 
 * Proceed to Android Integration to complete the flow.

@@ -9,7 +9,6 @@ The back end script does 3 main jobs.
 * Capture Payment after authorised.
 
 # Checkout
-
 Here's how checkout is created:
 
 ``` curl
